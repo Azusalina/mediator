@@ -72,3 +72,7 @@ The first gold/red theme used a constructivist hero, bold uppercase headline, di
 - Chromium checks verified search autofocus on opening and reload, multiple pins surviving reload, separate TCP/UDP pins for the same port number, correct control focus after pinning and background refresh, search/filter ordering, and retained pins after a service disappears and returns.
 - Same-origin tabs synchronized an Unpin change. Malformed stored data did not break the list; blocked storage allowed temporary pins and displayed the persistence limitation. Both localhost hostnames loaded without JavaScript errors.
 - Desktop and 320-pixel screenshots were visually inspected. Layout checks at 320, 390, and 768 pixels passed without horizontal overflow. Browser checks used an isolated browser profile and controlled listener fixtures.
+
+## Independent repository migration (2026-10-27)
+
+Source and existing local data moved to `/home/a/Documents/products/mediator`, retaining the product commit history. This checkout now owns its `.git` and `origin`; commit and push here independently. This supersedes the earlier hub-only or root-forwarded publication arrangement. Existing configuration locations, command names, and user data are preserved.

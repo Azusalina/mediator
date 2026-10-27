@@ -11,7 +11,7 @@ Your local service directory. Visit **http://localhost** or **http://127.0.0.1**
 Requires Node.js 22+, Python 3, systemd, `ss` from iproute2, and `fuser` from psmisc. No npm dependencies.
 
 ```sh
-cd /home/a/Documents/someProducts/mediator
+cd /home/a/Documents/products/mediator
 python3 scripts/install.py
 ```
 
@@ -64,3 +64,5 @@ The search field receives focus when the page opens. Use Pin under a port number
 Use Terminate to review the owning processes and any other ports they share, then confirm to run `fuser -k -TERM -n tcp PORT` (or `udp`). This stops the whole process, including its other listeners. Only processes owned by the account running Mediator can be terminated; Mediator itself is protected. A supervised service may restart automatically, and the page reports when the port remains in use. Cancel closes the confirmation without sending a signal.
 
 See [description.md](description.md) for background and technical details.
+
+This is an independent repository at `/home/a/Documents/products/mediator`, published as [Azusalina/mediator](https://github.com/Azusalina/mediator). Run `git add`, `git commit`, and `git push` here. Its source has moved out of `someProducts`; hub pushes no longer publish this project.
